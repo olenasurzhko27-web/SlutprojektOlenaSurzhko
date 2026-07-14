@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav>
+                <img class="logo" src="images/logo_site.png" alt="Logo">
+                <ul class="top_header">
+    <li class="top_header_item">
+        <a class="menu_link" href="#">Home</a>
+    </li>
+
+    <li class="top_header_item dropdown">
+        <a class="menu_link" href="#">Locations</a>
+
+        <ul class="dropdown-menu">
+            <li><a href="#trolltunga">Trolltunga</a></li>
+            <li><a href="#preikestolen">Preikestolen</a></li>
+            <li><a href="#lardalstigen">Lårdalstigen</a></li>
+        </ul>
+    </li>
+
+    <li class="top_header_item">
+        <a class="menu_link" href="#">Contact</a>
+    </li>
+
+    <li class="icon-like">
+        <a href="#"><img src="images/like.png" alt="Bag"></a>
+    </li>
+</ul>
+            </nav>
+
+        </header>
+
+        
+    </div>
+
+<div class="locations">
+
+    <div class="card"
+        data-gallery='[
+        "images/Trolltunga1.png",
+        "images/Trolltunga2.png",
+        "images/Trolltunga3.png",
+        "images/Trolltunga4.png",
+        "images/Trolltunga5.png",
+        "images/Trolltunga6.png"
+        ]'>
+        <img class="images" src="images/Trolltunga1.png" alt="Trolltunga">
+            <h2 class="card__title">Trolltunga</h2>
+            <h3 class="card__color">Vestland, Norway</h3>
+
+            <p class="card__description">
+                Trolltunga (literally “the Troll’s Tongue”) is a spectacular rock formation in Ullensvang Municipality, Vestland County, Norway. Perched 1,126 meters (3,694 ft) above sea level, the famous cliff extends horizontally from the mountainside and rises approximately 700 meters (2,300 ft) above the northern shore of Lake Ringedalsvatnet, offering one of the most breathtaking viewpoints in the country.
+
+                In recent years, Trolltunga has become one of Norway’s most iconic natural landmarks and a world-renowned hiking destination. Visitor numbers have grown dramatically, with the challenging 27-kilometer (17-mile) round-trip hike from the village of Skjeggedal attracting tens of thousands of hikers each year.
+
+                The hike is considered very demanding, typically taking at least 10 hours to complete over rugged mountain terrain. There are no shops or supply points along the route, so hikers must bring everything they need. Two emergency shelters are available on the trail, and plans have been proposed to build a mountain lodge approximately halfway along the route, providing a place for hikers to rest.
+            </p>
+
+        </div>
+
+        <div class="card"
+        data-gallery='[
+        "images/Preikestolen1.png",
+        "images/Preikestolen2.png",
+        "images/Preikestolen3.png",
+        "images/Preikestolen4.png",
+        "images/Preikestolen5.png"
+        ]'>
+        <img class="images" src="images/Preikestolen2.png" alt="Preikestolen">
+            <h2 class="card__title">Preikestolen</h2>
+            <h3 class="card__color">Vestland, Norway</h3>
+
+            <p class="card__description">
+                Preikestolen became a tourist destination around 1900, when the Stavanger Tourist Association (STF) began promoting the plateau as an important attraction. It was also STF that gave it the name Preikestolen, the Nynorsk version of Prekestolen. STF built the Preikestolhytta cabin in 1949, which was later complemented by the Preikestolen Mountain Lodge in 2004. The access road to Preikestolhytta was completed in 1961.
+
+The site has seen rapidly increasing visitor numbers over the years. During the period from May to August 2008, 117,554 people visited Preikestolen. By 2018, more than 300,000 people made the hike. In June 2019 alone, there were 64,000 visitors. In 2022, by October, it was estimated that 330,000 people had visited, setting a new record.
+
+In 2020, the four-kilometer trail to Preikestolen was certified as a National Tourist Route.
+            </p>
+
+        </div>
+
+
+        <div class="card"
+        data-gallery='[
+        "images/Lårdalstigen1.png",
+        "images/Lårdalstigen2.png",
+        "images/Lårdalstigen3.png",
+        "images/Lårdalstigen4.png",
+        "images/Lårdalstigen5.png"
+        ]'>
+        <img class="images" src="images/Lårdalstigen4.png" alt="Trolltunga">
+            <h2 class="card__title">Lårdalstigen</h2>
+            <h3 class="card__color">Vestland, Norway</h3>
+
+            <p class="card__description">
+                Lårdalstigen is a spectacular and challenging 14 km hiking trail in the Telemark region of Norway. The trail follows a narrow mountain ridge, rising 700–800 meters above the historic Telemark Canal and Lake Bandak, offering dramatic views throughout the hike.
+            </p>
+
+        </div>
+
+        <div class="modal" id="galleryModal">
+    <button class="close">&times;</button>
+
+    <section id="image-carousel" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list"></ul>
+        </div>
+    </section>
+        </div>
+
+    </div>
+
+     <div class="footer"> 
+            <ul class="menu">
+                <h3 class="Footer_name"> Menu</h3>
+                    <li class="menu_item"><a class="menu_link" href="#">Home</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Prodacts</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Contact</a></li>
+            </ul>
+
+            <ul class="menu">
+                <h3 class="Where_we_are"> Where we are</h3>
+                    <p>Sinus skatebords Railsväen 13 133 37, Rampnäs</p>
+
+            </ul>
+
+            <ul class="menu">
+                <h3 class="Footer_name"> Social media</h3>
+                    <li class="menu_item"><a class="menu_link" href="#">Twitter</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Facebook</a></li>
+                    <li class="menu_item"><a class="menu_link" href="#">Instagram</a></li>
+            </ul>
+
+
+
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js">
+
+    </script>
+    <script src="js.js"></script>
+</body>
+</html>
